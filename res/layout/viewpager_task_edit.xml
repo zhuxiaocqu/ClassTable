@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@+id/task_rlyt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_background" >
+
+        <TextView
+            android:id="@+id/task_txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="140.0dip"
+            android:shadowColor="@color/detail_course_title_shadow"
+            android:shadowDx="0.0"
+            android:shadowDy="-2.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="@string/detail_course_title"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/task_edit_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/btn_back_selector"
+            android:gravity="center"
+            android:maxWidth="64.0dip"
+            android:shadowColor="@color/btn_back_shadow"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="@string/general_back"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/task_edit_rlyt_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip" >
+
+
+            <Button
+                android:id="@+id/task_edit_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_finish_selector"
+                android:shadowColor="@color/btn_back_shadow"
+                android:shadowDx="0.0"
+                android:shadowDy="-1.0"
+                android:shadowRadius="1.0"
+                android:text="@string/general_finish"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_course_rlyt_task"
+        android:layout_below="@id/task_rlyt_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/detail_course_background_bitmap"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/task_course_sllv_edit"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:scrollbars="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/task_course_llyt_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16.0dip" >
+
+                    <!-- 作业部分 -->
+
+                    <RelativeLayout
+                        android:id="@+id/task_homework_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip" >
+
+                        <TextView
+                            android:id="@+id/task_homework_edit_tip_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_homework_tip_txt"
+                            android:textColor="@color/hint"
+                            android:textSize="18.0sp" />
+
+                        <EditText
+                            android:id="@+id/task_edit_homework"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignLeft="@id/task_homework_edit_tip_textview"
+                            android:layout_below="@id/task_homework_edit_tip_textview"
+                            android:background="@drawable/task_edittxt_selector"
+                            android:hint="@string/task_homework_content_edit"
+                            android:gravity="top"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 作业部分 -->
+                    <!-- 课堂心得部分 -->
+
+                    <RelativeLayout
+                        android:id="@+id/task_learn_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dip"
+                        android:paddingTop="30dip" >
+
+                        <TextView
+                            android:id="@+id/task_learn_edit_tip_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_learn_tip_txt"
+                            android:textColor="@color/hint"
+                            android:textSize="18.0sp" />
+
+                        <EditText
+                            android:id="@+id/task_edit_learn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/task_learn_edit_tip_textview"
+                            android:background="@drawable/task_edittxt_selector"
+                            android:hint="@string/task_learn_content_edit"
+                            android:gravity="top"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 课堂心得部分 -->
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_title_shadow" />
+    </RelativeLayout>
+
+</RelativeLayout>

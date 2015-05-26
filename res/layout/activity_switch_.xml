@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Switch_Activity" >
+
+    <FrameLayout
+        android:id="@+id/set_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="设   置"
+            android:gravity="center"
+            android:textColor="#ff000000"
+            android:textSize="28dip" />
+
+        <ImageButton
+            android:id="@+id/back_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:src="@drawable/set_back_change" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/set_title" >
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/second_title"
+                android:text="自定义设置"
+                android:textColor="#ff000000" />
+
+            <RelativeLayout
+                android:id="@+id/self_update_state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/update_F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/self_update_state"
+                    android:text="打开自动更新"
+                    android:textColor="#ff000000"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_F"
+                    android:text="每日固定的时间进行更新"
+                    android:textColor="#ff000000" />
+
+                <ImageButton
+                    android:id="@+id/myswitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#00ffffff"
+                    android:paddingBottom="8px"
+                    android:paddingRight="8px"
+                    android:src="@drawable/off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/self_update_state2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10px" >
+
+                <TextView
+                    android:id="@+id/mytime_set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/time_selector"
+                    android:textColor="#ff000000" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/second_title"
+                android:text="附加功能"
+                android:textColor="#ff000000" />
+
+            <RelativeLayout
+                android:id="@+id/self_update_state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/update_F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/self_update_state"
+                    android:text="事件提醒"
+                    android:textColor="#ff000000"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_F"
+                    android:text="提醒预先设置好的事情"
+                    android:textColor="#ff000000" />
+
+                <ImageButton
+                    android:id="@+id/my_warn_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/self_update_state"
+                    android:background="#00ffffff"
+                    android:paddingBottom="8px"
+                    android:paddingRight="8px"
+                    android:src="@drawable/off" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/second_title"
+                android:text="用户信息管理"
+                android:textColor="#ff000000" />
+
+            <RelativeLayout
+                android:id="@+id/self_update_state3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/update_F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/self_update_state3"
+                    android:text="自动登录"
+                    android:textColor="#ff000000"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_F"
+                    android:text="软件运行自动登录"
+                    android:textColor="#ff000000" />
+
+                <ImageButton
+                    android:id="@+id/my_self_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/self_update_state3"
+                    android:background="#00ffffff"
+                    android:paddingBottom="8px"
+                    android:paddingRight="8px"
+                    android:src="@drawable/off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/self_update_state4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10px" >
+
+                <TextView
+                    android:id="@+id/delete_set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/time_selector"
+                    android:textColor="#ff000000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

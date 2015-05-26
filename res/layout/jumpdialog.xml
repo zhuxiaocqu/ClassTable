@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/jumpdialogrela" >
+    <TextView 
+        android:id="@+id/jumpdialogtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:textSize="20dp"
+        android:text="@string/jumpdialogtip1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    <EditText
+        android:id="@+id/jumpdialogedit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/jumpdialogtext1"
+        android:layout_alignParentTop="true"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/jumpdialogtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:text="@string/jumpdialogtip2"
+        android:layout_below="@id/jumpdialogtext1"
+        android:layout_alignParentLeft="true"
+        />
+    <EditText
+        android:id="@+id/jumpdialogedit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/jumpdialogtext2"
+        android:layout_below="@id/jumpdialogedit1"
+        android:inputType="number"/>
+
+</RelativeLayout>

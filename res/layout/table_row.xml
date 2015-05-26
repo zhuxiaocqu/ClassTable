@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableRow"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView_Id"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        
+        android:text="id"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView_Name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        
+        android:text="name" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView_Weeks"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        
+        android:text="weeks"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView_Classes"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        
+        android:text="classes" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView_Classroom"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        
+        android:text="classroom" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView_Credit"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+ 
+        android:text="学分"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView_Teacher"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+
+        android:text="教师"
+        android:visibility="gone" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView_ClassHour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+ 
+        android:text="总学时"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView_TeachHour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:text="讲授学时"
+        android:visibility="gone" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView_ExperimentHour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:text="上机学时"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView_CourseKind"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+
+        android:text="类别"
+        android:visibility="gone" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView_TeachKind"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:text="授课方式"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView_ExamKind"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+  
+        android:text="考核方式"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

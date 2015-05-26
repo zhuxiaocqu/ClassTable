@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_course_rlyt_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detail_course_background_bitmap" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/view_course_sllv_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/view_course_llyt_course_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16.0dip" >
+
+                    <!-- 课程名称项111 -->
+
+                    <RelativeLayout
+                        android:id="@+id/view_course_rlyt_courseName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_top"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_course_name"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_courseName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 课程名称项 -->
+                    <!-- 教室地点项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/view_course_rlyt_classroom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/edit_course_classroom"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_classroom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 教室地点项 -->
+                    <!-- 老师项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_teacher"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/edit_course_teacher"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_teacher"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 老师项 -->
+                    <!-- 课程类别项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_kind"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/edit_course_txv_kind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_course_kind"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_kind"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 课程类别项 -->
+
+
+                    <!-- 学分项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_score"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/edit_course_txv_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_course_score"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_score"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 学分项 -->
+
+
+                    <!-- 讲授学时项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_teachtime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/edit_course_txv_teachtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_course_teachtime"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_teachtime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 讲授学时项 -->
+                    <!-- 上机学时项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_exptime"
+                       android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/edit_course_txv_exptime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_course_exptime"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_exptime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 上机学时项 -->
+                    <!-- 考核方式项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_exam"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/edit_course_txv_exam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_course_exam"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_exam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 考核方式项 -->
+                    <!-- 上课节次项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_section"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_textbox_middle"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/edit_course_txv_section1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_course_section"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_classTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 上课节次项 -->
+
+
+                    <!-- 上课周次项 -->
+
+                    <RelativeLayout
+                        android:id="@+id/edit_course_rlyt_week"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/ic_btn_box_bottom_normal"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip" >
+
+                        <TextView
+                            android:id="@+id/edit_course_txv_week1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="上课周数:"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/view_course_week"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90.0dip"
+                            android:background="@color/lucency_white"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLength="25"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                    <!-- 上课周次项 -->
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_title_shadow" />
+
+</RelativeLayout>

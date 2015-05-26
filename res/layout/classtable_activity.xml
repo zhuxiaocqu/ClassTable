@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/classtable_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/title_background" >
+
+        <TextView
+            android:id="@+id/textWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/iniweek"
+            android:textColor="#ffffff"
+            android:textSize="28dip" />
+
+        <ImageButton
+            android:id="@+id/button_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:src="@drawable/imagebutton_menu" />
+
+        <ImageButton
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/imagebutton_update" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/classtable_weeks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classtable_title"
+        android:paddingTop="16dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip" >
+
+        <LinearLayout
+            android:id="@+id/Layout_weeks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Mon"
+                android:layout_width="42dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#2f00ff00"
+                android:textColor="#ffffffff"
+                android:text="Mon" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Tue"
+                android:layout_width="42dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#2f00ff00"
+                android:textColor="#ffffffff"
+                android:text="Tue" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Wed"
+                android:layout_width="42dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#2f00ff00"
+                android:textColor="#ffffffff"
+                android:text="Wed" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Thu"
+                android:layout_width="42dip"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:background="#2f00ff00"
+                android:text="Thu" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Fri"
+                android:layout_width="42dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#2f00ff00"
+                android:textColor="#ffffffff"
+                android:text="Fri" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Sta"
+                android:layout_width="42dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#2f00ff00"
+                android:textColor="#ffffffff"
+                android:text="Sat" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Sun"
+                android:layout_width="43dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:background="#2f00ff00"
+                android:text="Sun" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/classtable_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classtable_weeks"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/classtable_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/lucency_black"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/welcome"
+        android:gravity="center"
+        android:textColor="#436EEE" />
+
+</RelativeLayout>

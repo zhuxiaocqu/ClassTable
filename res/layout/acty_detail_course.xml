@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@id/detail_course_rlyt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_background" >
+
+        <TextView
+            android:id="@id/detail_course_txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="140.0dip"
+            android:shadowColor="@color/detail_course_title_shadow"
+            android:shadowDx="0.0"
+            android:shadowDy="-2.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="@string/detail_course_title"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@id/detail_course_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/btn_back_selector"
+            android:gravity="center"
+            android:maxWidth="64.0dip"
+            android:shadowColor="@color/btn_back_shadow"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="@string/general_back"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@id/detail_course_rlyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip" >
+
+
+            <Button
+                android:id="@id/detail_course_btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_finish_selector"
+                android:shadowColor="@color/btn_back_shadow"
+                android:shadowDx="0.0"
+                android:shadowDy="-1.0"
+                android:shadowRadius="1.0"
+                android:text="@string/general_edit"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/detail_course_rlyt_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/detail_course_rlyt_title"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/detail_course_background_bitmap" />
+
+        <LinearLayout
+            android:id="@id/detail_course_llyt_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@id/detail_course_rlyt_table_course_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/detail_course_table_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@id/detail_course_img_table_course_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_detail_course_table_assignment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_toRightOf="@id/detail_course_img_table_course_info"
+                    android:shadowColor="#40ffffff"
+                    android:shadowDx="0.0"
+                    android:shadowDy="-1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/detail_course_table_course_info"
+                    android:textColor="@color/detail_course_table_text"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="2.0px"
+                android:layout_height="fill_parent"
+                android:background="@color/detail_course_table_split" />
+
+            <RelativeLayout
+                android:id="@id/detail_course_rlyt_table_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/detail_course_table_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@id/detail_course_img_table_classmate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:src="@drawable/ic_detail_course_table_classmate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_toRightOf="@id/detail_course_img_table_classmate"
+                    android:shadowColor="#40ffffff"
+                    android:shadowDx="0.0"
+                    android:shadowDy="-1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/detail_course_table_classmate"
+                    android:textColor="@color/detail_course_table_text"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/detail_course_rlyt_title_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_title_shadow" />
+
+        <RelativeLayout
+            android:id="@id/detail_course_rlyt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/detail_course_llyt_table" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@id/detail_course_vpgr_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/lucency_black"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/detail_course_rlyt_table_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_course_llyt_table"
+            android:background="@drawable/ic_title_shadow" />
+    </RelativeLayout>
+
+</RelativeLayout>
